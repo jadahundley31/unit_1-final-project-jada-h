@@ -1,0 +1,467 @@
+[
+  {
+    "id": 1,
+    "question": "You suddenly have a completely free weekend. What sounds the most exciting?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Taking a spontaneous road trip somewhere I've never been.",
+        "category": "Adventurer"
+      },
+      {
+        "id": "B",
+        "text": "Staying home with snacks and watching something hilarious.",
+        "category": "Comedic"
+      },
+      {
+        "id": "C",
+        "text": "Having a cozy date night with someone I care about.",
+        "category": "Romantic"
+      },
+      {
+        "id": "D",
+        "text": "Solving a puzzle, playing a mystery game, or figuring out a brain teaser.",
+        "category": "Detective"
+      },
+      {
+        "id": "E",
+        "text": "Watching a creepy movie alone with the lights off.",
+        "category": "Horror"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "You're exploring a new place and discover a mysterious door. What do you do?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Open it immediately. Who knows what's behind it?",
+        "category": "Adventurer"
+      },
+      {
+        "id": "B",
+        "text": "Make a joke about how this is obviously how horror movies begin.",
+        "category": "Comedic"
+      },
+      {
+        "id": "C",
+        "text": "Wait for someone else to open it with me.",
+        "category": "Romantic"
+      },
+      {
+        "id": "D",
+        "text": "Look around for clues before touching anything.",
+        "category": "Detective"
+      },
+      {
+        "id": "E",
+        "text": "Open it because I'm hoping something terrifying happens.",
+        "category": "Horror"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "What kind of book ending do you enjoy most?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "A huge adventure that leaves me wanting to explore the world myself.",
+        "category": "Adventurer"
+      },
+      {
+        "id": "B",
+        "text": "Something funny that leaves me smiling.",
+        "category": "Comedic"
+      },
+      {
+        "id": "C",
+        "text": "A satisfying romantic ending that makes me believe in love.",
+        "category": "Romantic"
+      },
+      {
+        "id": "D",
+        "text": "A shocking twist that makes me rethink everything I just read.",
+        "category": "Detective"
+      },
+      {
+        "id": "E",
+        "text": "An unsettling ending that stays in my head long after I finish the book.",
+        "category": "Horror"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Your friends invite you to try something you've never done before. You...",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Say 'Absolutely!' before they even explain what it is.",
+        "category": "Adventurer"
+      },
+      {
+        "id": "B",
+        "text": "Ask whether there will at least be snacks and entertainment.",
+        "category": "Comedic"
+      },
+      {
+        "id": "C",
+        "text": "Agree because spending time with people you love is what matters.",
+        "category": "Romantic"
+      },
+      {
+        "id": "D",
+        "text": "Ask a million questions before deciding.",
+        "category": "Detective"
+      },
+      {
+        "id": "E",
+        "text": "Ask whether there's a chance something scary could happen.",
+        "category": "Horror"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Which fictional character would you most want to spend a day with?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "An adventurous explorer who is always looking for their next challenge.",
+        "category": "Adventurer"
+      },
+      {
+        "id": "B",
+        "text": "The character who makes everyone laugh even when everything goes wrong.",
+        "category": "Comedic"
+      },
+      {
+        "id": "C",
+        "text": "The hopeless romantic who believes everyone has a soulmate.",
+        "category": "Romantic"
+      },
+      {
+        "id": "D",
+        "text": "The detective who always seems to notice what everyone else misses.",
+        "category": "Detective"
+      },
+      {
+        "id": "E",
+        "text": "The character who somehow survives every terrifying situation.",
+        "category": "Horror"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "You're reading a book and the main character makes a questionable decision. What's your reaction?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Let's see where this adventure goes!",
+        "category": "Adventurer"
+      },
+      {
+        "id": "B",
+        "text": "Oh no...this is going to be hilarious.",
+        "category": "Comedic"
+      },
+      {
+        "id": "C",
+        "text": "I hope this doesn't ruin their relationship!",
+        "category": "Romantic"
+      },
+      {
+        "id": "D",
+        "text": "Wait. Why did they do that? Something isn't right.",
+        "category": "Detective"
+      },
+      {
+        "id": "E",
+        "text": "Yep. They're definitely about to get themselves killed.",
+        "category": "Horror"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "Which vacation sounds the most appealing?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Hiking through mountains or exploring a foreign country.",
+        "category": "Adventurer"
+      },
+      {
+        "id": "B",
+        "text": "Visiting a fun city with comedy shows, food, and entertainment.",
+        "category": "Comedic"
+      },
+      {
+        "id": "C",
+        "text": "A romantic getaway somewhere beautiful and peaceful.",
+        "category": "Romantic"
+      },
+      {
+        "id": "D",
+        "text": "Visiting an old city filled with history, secrets, and unsolved stories.",
+        "category": "Detective"
+      },
+      {
+        "id": "E",
+        "text": "Staying somewhere famous for being haunted.",
+        "category": "Horror"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "Someone tells you, 'I have a secret, but I can't tell you yet.' What do you do?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Fine...but I'm coming with you when you reveal it.",
+        "category": "Adventurer"
+      },
+      {
+        "id": "B",
+        "text": "Make up increasingly ridiculous guesses until they tell you.",
+        "category": "Comedic"
+      },
+      {
+        "id": "C",
+        "text": "Patiently wait because I don't want to pressure them.",
+        "category": "Romantic"
+      },
+      {
+        "id": "D",
+        "text": "Start analyzing everything they've said to figure it out myself.",
+        "category": "Detective"
+      },
+      {
+        "id": "E",
+        "text": "Wonder if the secret involves something supernatural.",
+        "category": "Horror"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "What makes you keep reading a book late into the night?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "The characters are on an incredible adventure and I need to know what happens next.",
+        "category": "Adventurer"
+      },
+      {
+        "id": "B",
+        "text": "The story is so funny that I keep laughing and turning the pages.",
+        "category": "Comedic"
+      },
+      {
+        "id": "C",
+        "text": "I need to know whether the characters will end up together.",
+        "category": "Romantic"
+      },
+      {
+        "id": "D",
+        "text": "There are unanswered questions and I need to solve the mystery.",
+        "category": "Detective"
+      },
+      {
+        "id": "E",
+        "text": "The story is terrifying and I have to know what happens—even though I'm scared.",
+        "category": "Horror"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "Which superpower would you choose?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Teleportation — I'd travel everywhere.",
+        "category": "Adventurer"
+      },
+      {
+        "id": "B",
+        "text": "Making anyone laugh instantly.",
+        "category": "Comedic"
+      },
+      {
+        "id": "C",
+        "text": "Knowing when someone is your perfect match.",
+        "category": "Romantic"
+      },
+      {
+        "id": "D",
+        "text": "Knowing when someone is lying.",
+        "category": "Detective"
+      },
+      {
+        "id": "E",
+        "text": "Being able to communicate with ghosts.",
+        "category": "Horror"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "question": "You're at a party where you don't know anyone. What are you most likely to do?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Find someone interesting and convince them to go on an adventure.",
+        "category": "Adventurer"
+      },
+      {
+        "id": "B",
+        "text": "Find the funniest person there and start joking around.",
+        "category": "Comedic"
+      },
+      {
+        "id": "C",
+        "text": "Look for someone I connect with and have a meaningful conversation.",
+        "category": "Romantic"
+      },
+      {
+        "id": "D",
+        "text": "Observe everyone and try to figure out who knows whom.",
+        "category": "Detective"
+      },
+      {
+        "id": "E",
+        "text": "Find the darkest room in the house and investigate it.",
+        "category": "Horror"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "question": "Which plot would immediately grab your attention?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "A group of explorers discovers an unknown world.",
+        "category": "Adventurer"
+      },
+      {
+        "id": "B",
+        "text": "Two complete disasters accidentally become roommates.",
+        "category": "Comedic"
+      },
+      {
+        "id": "C",
+        "text": "Two people who can't stand each other slowly fall in love.",
+        "category": "Romantic"
+      },
+      {
+        "id": "D",
+        "text": "A detective discovers that everyone involved in a crime is hiding something.",
+        "category": "Detective"
+      },
+      {
+        "id": "E",
+        "text": "A family moves into a house with a terrifying history.",
+        "category": "Horror"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "question": "What kind of challenge sounds the most fun?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Something physically or mentally challenging that pushes me outside my comfort zone.",
+        "category": "Adventurer"
+      },
+      {
+        "id": "B",
+        "text": "A ridiculous challenge where everyone ends up laughing.",
+        "category": "Comedic"
+      },
+      {
+        "id": "C",
+        "text": "Something that helps me connect more deeply with another person.",
+        "category": "Romantic"
+      },
+      {
+        "id": "D",
+        "text": "A complicated puzzle that requires me to figure out the answer.",
+        "category": "Detective"
+      },
+      {
+        "id": "E",
+        "text": "Spending the night somewhere supposedly haunted.",
+        "category": "Horror"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "question": "Your friend says, 'I found something strange in the basement.' What is your first thought?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Let's go see what it is!",
+        "category": "Adventurer"
+      },
+      {
+        "id": "B",
+        "text": "If we die, I'm blaming you.",
+        "category": "Comedic"
+      },
+      {
+        "id": "C",
+        "text": "Are you okay? Do you want me to come with you?",
+        "category": "Romantic"
+      },
+      {
+        "id": "D",
+        "text": "What exactly did you find? Start from the beginning.",
+        "category": "Detective"
+      },
+      {
+        "id": "E",
+        "text": "Please tell me it's a ghost.",
+        "category": "Horror"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "question": "Which statement sounds most like you?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Life is too short not to try something new.",
+        "category": "Adventurer"
+      },
+      {
+        "id": "B",
+        "text": "Everything is better when you can laugh about it.",
+        "category": "Comedic"
+      },
+      {
+        "id": "C",
+        "text": "The best stories are about connection and love.",
+        "category": "Romantic"
+      },
+      {
+        "id": "D",
+        "text": "There's always more to the story than what you see.",
+        "category": "Detective"
+      },
+      {
+        "id": "E",
+        "text": "I want a story that keeps me up at night.",
+        "category": "Horror"
+      }
+    ]
+  }
+]
