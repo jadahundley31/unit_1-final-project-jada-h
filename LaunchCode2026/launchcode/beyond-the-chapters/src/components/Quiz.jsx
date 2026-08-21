@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 
 const Quiz = () => {
-  const [currentQuestion, setCurrentQuestion] = useState(0);
   const [questions, setQuestions] = useState([]);
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [selectedCategory, setSelectedCategory] = useState("");
 
   useEffect(() => {
     fetch("/mock-data/personalityQuestions.json")
@@ -20,17 +21,23 @@ const Quiz = () => {
       });
   }, []);
 
-  return (
-    <div>
-      {questions.map((question) => {
-        return (
-          <div>
-            <li key={question.id}>{question.question}</li>
-          </div>
-        );
-      })}
-    </div>
-  );
+  if (questions.length === 0) {
+    return <p>Loading quiz...</p>;
+  } else {
+
+    function handleChoice(choice){
+        console.log(choice.category);
+    }
+
+    return (
+      <div>
+        {questions[currentQuestion].question}
+        {questions[currentQuestion].choices.map((choice) => {
+          return <button key={choice.id} onClick={() => handleChoice(choice)}>{choice.text}</button>;
+        })}
+      </div>
+    );
+  }
 };
 
 export default Quiz;
