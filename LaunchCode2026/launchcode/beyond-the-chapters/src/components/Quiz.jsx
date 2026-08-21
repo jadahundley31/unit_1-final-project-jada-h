@@ -26,6 +26,7 @@ const Quiz = () => {
   } else {
 
     function handleChoice(choice){
+        setSelectedCategory(choice.category);
         console.log(choice.category);
     }
 
