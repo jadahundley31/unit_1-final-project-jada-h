@@ -4,6 +4,7 @@ const Quiz = () => {
   const [questions, setQuestions] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedCategory, setSelectedCategory] = useState("");
+  const totalQuestion = 15;
 
   useEffect(() => {
     fetch("/mock-data/personalityQuestions.json")
@@ -25,17 +26,26 @@ const Quiz = () => {
     return <p>Loading quiz...</p>;
   } else {
 
-    function handleChoice(choice){
+    const handleUserChoice = (choice) => {
         setSelectedCategory(choice.category);
         console.log(choice.category);
+    }
+    const handleNextQuestion = () => {
+        if (currentQuestion < totalQuestion) {
+            setCurrentQuestion((previousQuestion) => {
+                return previousQuestion + 1;
+            })
+        }
     }
 
     return (
       <div>
         {questions[currentQuestion].question}
         {questions[currentQuestion].choices.map((choice) => {
-          return <button key={choice.id} onClick={() => handleChoice(choice)}>{choice.text}</button>;
+          return <button key={choice.id} onClick={() => handleUserChoice(choice)}>{choice.text}</button>;
         })}
+
+        {currentQuestion < totalQuestion ? (<button onClick={handleNextQuestion}>Next Question</button>) : (<p>You've reached the end!</p>)}
       </div>
     );
   }
