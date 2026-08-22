@@ -4,7 +4,13 @@ const Quiz = () => {
   const [questions, setQuestions] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedCategory, setSelectedCategory] = useState("");
-  const totalQuestion = 15;
+  const [scores, setScores] = useState({
+    Adventurer: 0,
+    Comedic: 0,
+    Romantic: 0,
+    Detective: 0,
+    Horror: 0,
+  });
 
   useEffect(() => {
     fetch("/mock-data/personalityQuestions.json")
@@ -25,27 +31,73 @@ const Quiz = () => {
   if (questions.length === 0) {
     return <p>Loading quiz...</p>;
   } else {
-
     const handleUserChoice = (choice) => {
-        setSelectedCategory(choice.category);
-        console.log(choice.category);
-    }
+      setSelectedCategory(choice.category);
+      updateScore(choice);
+    };
     const handleNextQuestion = () => {
-        if (currentQuestion < totalQuestion) {
-            setCurrentQuestion((previousQuestion) => {
-                return previousQuestion + 1;
-            })
-        }
-    }
-
+      if (currentQuestion < questions.length - 1) {
+        setCurrentQuestion((previousQuestion) => {
+          return previousQuestion + 1;
+        });
+      }
+    };
+    const updateScore = (choice) => {
+      if (choice.category === "Adventurer") {
+        setScores((prevScores) => {
+          return {
+            ...prevScores,
+            Adventurer: prevScores.Adventurer + 1,
+          };
+        });
+      } else if (choice.category === "Comedic") {
+        setScores((prevScores) => {
+          return {
+            ...prevScores,
+            Comedic: prevScores.Comedic + 1,
+          };
+        });
+      } else if (choice.category === "Romantic") {
+        setScores((prevScores) => {
+          return {
+            ...prevScores,
+            Romantic: prevScores.Romantic + 1,
+          };
+        });
+      } else if (choice.category === "Detective") {
+        setScores((prevScores) => {
+          return {
+            ...prevScores,
+            Detective: prevScores.Detective + 1,
+          };
+        });
+      } else if (choice.category === "Horror") {
+        setScores((prevScores) => {
+          return {
+            ...prevScores,
+            Horror: prevScores.Horror + 1,
+          };
+        });
+      }
+    };
+    console.log(scores);
     return (
       <div>
+        <p>
+          Question {currentQuestion + 1} of {questions.length}
+        </p>
         {questions[currentQuestion].question}
         {questions[currentQuestion].choices.map((choice) => {
-          return <button key={choice.id} onClick={() => handleUserChoice(choice)}>{choice.text}</button>;
+          return (
+            <button key={choice.id} onClick={() => handleUserChoice(choice)}>
+              {choice.text}
+            </button>
+          );
         })}
 
-        {currentQuestion < totalQuestion ? (<button onClick={handleNextQuestion}>Next Question</button>) : (<p>You've reached the end!</p>)}
+        {currentQuestion < questions.length - 1 && (
+          <button onClick={handleNextQuestion}>Next Question</button>
+        )}
       </div>
     );
   }
