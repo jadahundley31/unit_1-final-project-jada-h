@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Routes, Route } from "react";
+import { useNavigate } from "react-router";
 
 const Quiz = () => {
   const [questions, setQuestions] = useState([]);
@@ -13,6 +13,7 @@ const Quiz = () => {
     Horror: 0,
   });
   const [isComplete, setIsComplete] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("/mock-data/personalityQuestions.json")
@@ -89,6 +90,9 @@ const Quiz = () => {
         });
       }
     };
+    const handleGetResults = () => {
+      navigate("/results");
+    };
     return (
       <div>
         <p>
@@ -111,7 +115,7 @@ const Quiz = () => {
           <button onClick={handleNextQuestion}>Next Question</button>
         )}
 
-        {isComplete && (<button>Get Results</button>)}
+        {isComplete && (<button onClick={handleGetResults}>Get Results</button>)}
       </div>
     );
   }
