@@ -32,14 +32,17 @@ const Quiz = () => {
     return <p>Loading quiz...</p>;
   } else {
     const handleUserChoice = (choice) => {
-      setSelectedCategory(choice.category);
-      updateScore(choice);
+      if(selectedCategory === "") {
+        setSelectedCategory(choice.category);
+        updateScore(choice);
+      }
     };
     const handleNextQuestion = () => {
       if (currentQuestion < questions.length - 1) {
         setCurrentQuestion((previousQuestion) => {
           return previousQuestion + 1;
         });
+        setSelectedCategory("");
       }
     };
     const updateScore = (choice) => {
@@ -80,7 +83,6 @@ const Quiz = () => {
         });
       }
     };
-    console.log(scores);
     return (
       <div>
         <p>
@@ -89,7 +91,7 @@ const Quiz = () => {
         {questions[currentQuestion].question}
         {questions[currentQuestion].choices.map((choice) => {
           return (
-            <button key={choice.id} onClick={() => handleUserChoice(choice)}>
+            <button key={choice.id} onClick={() => handleUserChoice(choice)} disabled={selectedCategory !== ""}>
               {choice.text}
             </button>
           );
