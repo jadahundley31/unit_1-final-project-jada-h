@@ -109,6 +109,8 @@ const Quiz = () => {
         {currentQuestion < questions.length - 1 && (
           <button onClick={handleNextQuestion}>Next Question</button>
         )}
+
+        {isComplete && (<button>Get Results</button>)}
       </div>
     );
   }
