@@ -11,6 +11,7 @@ const Quiz = () => {
     Detective: 0,
     Horror: 0,
   });
+  const [isComplete, setIsComplete] = useState(false);
 
   useEffect(() => {
     fetch("/mock-data/personalityQuestions.json")
@@ -32,9 +33,13 @@ const Quiz = () => {
     return <p>Loading quiz...</p>;
   } else {
     const handleUserChoice = (choice) => {
-      if(selectedCategory === "") {
+      if (selectedCategory === "") {
         setSelectedCategory(choice.category);
         updateScore(choice);
+
+        if (currentQuestion === questions.length - 1) {
+          setIsComplete(true);
+        }
       }
     };
     const handleNextQuestion = () => {
@@ -91,7 +96,11 @@ const Quiz = () => {
         {questions[currentQuestion].question}
         {questions[currentQuestion].choices.map((choice) => {
           return (
-            <button key={choice.id} onClick={() => handleUserChoice(choice)} disabled={selectedCategory !== ""}>
+            <button
+              key={choice.id}
+              onClick={() => handleUserChoice(choice)}
+              disabled={selectedCategory !== ""}
+            >
               {choice.text}
             </button>
           );
