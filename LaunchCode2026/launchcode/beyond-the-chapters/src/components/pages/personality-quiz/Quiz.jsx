@@ -44,6 +44,7 @@ const Quiz = () => {
         }
       }
     };
+
     const handleNextQuestion = () => {
       if (currentQuestion < questions.length - 1) {
         setCurrentQuestion((previousQuestion) => {
@@ -52,6 +53,7 @@ const Quiz = () => {
         setSelectedCategory("");
       }
     };
+
     const updateScore = (choice) => {
       if (choice.category === "Adventurer") {
         setScores((prevScores) => {
@@ -90,9 +92,27 @@ const Quiz = () => {
         });
       }
     };
+
     const handleGetResults = () => {
-      navigate("/results");
+      const result = calculateResults(scores);
+      navigate("/results", { state: {result} });
+
+      console.log(result);
     };
+
+    const calculateResults = (scores) => {
+      let highestScore = 0;
+      let winningCategory = "";
+      
+      for (let key in scores) {
+        if (scores[key] > highestScore) {
+          highestScore = scores[key];
+          winningCategory = key;
+        }
+      }
+      return winningCategory;
+    };
+
     return (
       <div>
         <p>
