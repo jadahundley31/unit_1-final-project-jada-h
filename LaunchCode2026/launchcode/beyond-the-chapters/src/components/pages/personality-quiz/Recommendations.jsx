@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 
 const Recommendations = ({ personality }) => {
-    const [books, setBooks] = useState([]);
+  const [books, setBooks] = useState([]);
 
-    useEffect(() => {
+  useEffect(() => {
     fetch("/mock-data/recommendedBooks.json")
       .then((response) => {
         if (!response.ok) {
@@ -18,12 +18,29 @@ const Recommendations = ({ personality }) => {
         console.log("Error loading data:", error);
       });
   }, []);
-  console.log(books);
+
+  const matchingBooks = books.filter((book) => {
+    if (book.category === personality) {
+      return true;
+    }
+  });
+
   return (
     <div>
-        <h2>Recommended Books</h2>
+      <h2>Recommended Books</h2>
+      <div className="book-container">
+        {matchingBooks.map((book) => {
+            return (
+              <div key={book.id} className="book-card">
+                <h3>{book.title}</h3>
+                <h4>{book.author}</h4>
+                <p>{book.summary}</p>
+              </div>
+            );
+          })}
+      </div>
     </div>
   );
-}
+};
 
 export default Recommendations;
