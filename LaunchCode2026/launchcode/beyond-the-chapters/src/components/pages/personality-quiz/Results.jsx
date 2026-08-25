@@ -7,9 +7,9 @@ const Results = () => {
         <div>
             <h1> Your Personality Result: </h1>
             <p>{location.state.result}</p>
+            <Recommendations personality={location.state.result}/>
         </div>
     );
-    <Recommendations personality={result}/>
 }
 
 export default Results;
