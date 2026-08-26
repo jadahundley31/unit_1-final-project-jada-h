@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./quiz.css";
 
 const Recommendations = ({ personality }) => {
   const [books, setBooks] = useState([]);
@@ -32,6 +33,8 @@ const Recommendations = ({ personality }) => {
         {matchingBooks.map((book) => {
             return (
               <div key={book.id} className="book-card">
+                <img className="book-cover" src={book.cover} alt={book.title}/>
+
                 <h3>{book.title}</h3>
                 <h4>{book.author}</h4>
                 <p>{book.summary}</p>
