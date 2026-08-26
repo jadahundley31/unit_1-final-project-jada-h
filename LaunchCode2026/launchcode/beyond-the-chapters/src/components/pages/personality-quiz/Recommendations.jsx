@@ -3,6 +3,7 @@ import "./quiz.css";
 
 const Recommendations = ({ personality }) => {
   const [books, setBooks] = useState([]);
+  const [categoryBooks, setCategoryBooks] = useState("");
 
   useEffect(() => {
     fetch("/mock-data/recommendedBooks.json")
@@ -26,21 +27,32 @@ const Recommendations = ({ personality }) => {
     }
   });
 
+  const handleSaveBook = (book) => {
+    if (categoryBooks === "") {
+        setCategoryBooks(book.category);
+    }
+    console.log(book);
+  };
+
   return (
     <div>
       <h2>Recommended Books</h2>
       <div className="book-container">
         {matchingBooks.map((book) => {
-            return (
-              <div key={book.id} className="book-card">
-                <img className="book-cover" src={book.cover} alt={book.title}/>
+          return (
+            <div key={book.id} className="book-card">
+              <img className="book-cover" src={book.cover} alt={book.title} />
 
-                <h3>{book.title}</h3>
-                <h4>{book.author}</h4>
-                <p>{book.summary}</p>
-              </div>
-            );
-          })}
+              <h3>{book.title}</h3>
+              <h4>{book.author}</h4>
+              <p>{book.summary}</p>
+
+              <button onClick={() => handleSaveBook(book)}>
+                Save to My List
+              </button>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

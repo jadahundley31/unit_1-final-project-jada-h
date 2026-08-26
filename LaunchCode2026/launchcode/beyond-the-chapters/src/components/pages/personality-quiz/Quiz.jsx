@@ -96,8 +96,6 @@ const Quiz = () => {
     const handleGetResults = () => {
       const result = calculateResults(scores);
       navigate("/results", { state: {result} });
-
-      console.log(result);
     };
 
     const calculateResults = (scores) => {
