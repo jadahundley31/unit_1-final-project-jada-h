@@ -3,7 +3,6 @@ import "./quiz.css";
 
 const Recommendations = ({ personality }) => {
   const [books, setBooks] = useState([]);
-  const [categoryBooks, setCategoryBooks] = useState("");
 
   useEffect(() => {
     fetch("/mock-data/recommendedBooks.json")
@@ -28,9 +27,6 @@ const Recommendations = ({ personality }) => {
   });
 
   const handleSaveBook = (book) => {
-    if (categoryBooks === "") {
-        setCategoryBooks(book.category);
-    }
     console.log(book);
   };
 
