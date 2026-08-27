@@ -27,7 +27,21 @@ const Recommendations = ({ personality }) => {
   });
 
   const handleSaveBook = (book) => {
-    console.log(book);
+    const storedBooks = localStorage.getItem("savedBooks");
+    let usersBookList = [];
+
+    if (storedBooks !== null) {
+        usersBookList = JSON.parse(storedBooks); //turning storedBooks back into an array.
+    }
+
+    const bookAlreadySaved = usersBookList.some((savedBook) => {
+        return savedBook.id === book.id;
+    });
+
+    if (bookAlreadySaved === false) {
+        usersBookList.push(book);
+        localStorage.setItem("savedBooks", JSON.stringify(usersBookList));
+    }
   };
 
   return (
