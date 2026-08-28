@@ -1,7 +1,9 @@
-import Quiz from './components/pages/personality-quiz/Quiz'
-import { Routes, Route, useNavigate } from "react-router"
+import Quiz from './components/pages/personality-quiz/Quiz';
+import Results from './components/pages/personality-quiz/Results';
+import UserPersonal from './components/pages/UserPersonal';
+import { Routes, Route, useNavigate } from "react-router";
 import './App.css'
-import Results from './components/pages/personality-quiz/Results'
+
 
 function App() {
  
@@ -10,6 +12,7 @@ function App() {
     <Routes>
       <Route path='/quiz' element={<Quiz/>} />
       <Route path='/results' element={<Results/>} />
+      <Route path='/user' element={<UserPersonal/>} />
     </Routes>
   )
 }

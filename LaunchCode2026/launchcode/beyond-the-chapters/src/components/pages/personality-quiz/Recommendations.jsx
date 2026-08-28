@@ -58,7 +58,7 @@ const Recommendations = ({ personality }) => {
               <p>{book.summary}</p>
 
               <button onClick={() => handleSaveBook(book)}>
-                Save to My List
+                Add to My List
               </button>
             </div>
           );
