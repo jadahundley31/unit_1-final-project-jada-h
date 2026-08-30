@@ -14,20 +14,22 @@ const Home = () => {
         <div className="home-content">
           <h1>
             Find the book that <br />
-            you were meant to read next.
+            you were meant to <br/>read next.
           </h1>
           <p>
             15 questions. 5 matches. <br />
             Just a quiz that took its time to uderstand you
           </p>
-          <button onClick={handleFindRead}>Find your next read</button>
+          <button className="start-quiz" onClick={handleFindRead}>Find your next read</button>
         </div>
         <div className="home-image">
           <img src="../images/clipart-books.png" alt="stack of books" />
         </div>
       </section>
       <section className="table-section">
-        <h2>How it works</h2>
+        <div>
+            <h2>How it works</h2>
+        </div>
         <table>
           <thead>
             <tr className="first-table-header">

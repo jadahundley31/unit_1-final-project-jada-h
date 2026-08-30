@@ -1,14 +1,23 @@
 .home-section {
   display: flex;
   flex-direction: column;
-  width: 100%
+  width: 50rem;
+  padding-left: 20rem;
+  font-size: larger;
 }
 
 .home-text {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: right;
   width: 100%;
+}
+.home-text h1 {
+  font-family: 'Chewy', 'serif';
+}
+
+.home-text p {
+  font-family: 'Henny Penny', 'serif';
 }
 
 .home-content {
@@ -16,10 +25,39 @@
 }
 
 .home-image {
-  width: 20rem;
+  width: 25rem;
+  height: auto;
+  margin-right: 10rem;
 }
 
 .home-image img {
   width: 100%;
   height: auto;
+}
+
+.start-quiz {
+  border-radius: 5px;
+  border-style: none;
+  background-color: #b95c38;
+  color: #f2ebe1;
+  padding: 15px, 30px;
+  font-size: 16px;
+}
+
+/*second half of home page*/
+
+h2 {
+  font-family: 'Chewy', 'serif';
+  display: inline-block;
+  border-top: 2px groove; 
+  padding-left: 20rem;  /* Extends line to the left */
+  padding-right: 20rem; /* Extends line to the right */
+}
+
+.first-table-header, .second-table-header {
+  font-family: 'Chewy', 'serif';
+}
+
+td {
+  font-family: 'Average Sans', 'serif';
 }
