@@ -46,26 +46,57 @@
   background-color: #b95c38;
   color: #f2ebe1;
   padding: 12px 24px;
+  font-family: 'Average Sans', 'serif';
   font-size: 1rem;
   border-radius: 8px;
   border-style: none;
   cursor: pointer;
 } 
 
-/*second half of home page*/
-
-h2 {
-  font-family: 'Chewy', 'serif';
-  display: inline-block;
-  border-top: 2px groove; 
-  padding-left: 20rem;  /* Extends line to the left */
-  padding-right: 20rem; /* Extends line to the right */
+.home-content button:hover {
+  transform: scale(1.05);
 }
 
-.first-table-header, .second-table-header {
+/*second half of home page*/
+
+h2, .first-table-header, .second-table-header {
   font-family: 'Chewy', 'serif';
 }
 
 p, td {
   font-family: 'Average Sans', 'serif';
+}
+
+.table-section {
+  width: 100%;
+  margin-top: 60px;
+  padding: 40px 0;
+  text-align: center;
+  border-top: 1px groove;
+}
+
+.table-section table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.table-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.first-table-header th {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+
+.second-table-header th {
+  font-size: 1.2rem;
+  padding-bottom: 15px;
+}
+
+.table-section td {
+  padding: 0 30px;
+  line-height: 1.5;
 }
