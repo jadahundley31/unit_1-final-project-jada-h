@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { prerenderToNodeStream } from "react-dom/static";
 import { useNavigate } from "react-router";
 
 const Quiz = () => {

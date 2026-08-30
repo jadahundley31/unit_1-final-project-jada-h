@@ -68,7 +68,8 @@ p, td {
 }
 
 .table-section {
-  width: 100%;
+  width: 90%;
+  align-self: center;
   margin-top: 60px;
   padding: 40px 0;
   text-align: center;
@@ -99,4 +100,15 @@ p, td {
 .table-section td {
   padding: 0 30px;
   line-height: 1.5;
+}
+
+.table-section button {
+  background-color: #b95c38;
+  color: #f2ebe1;
+  padding: 12px 24px;
+  font-family: 'Average Sans', 'serif';
+  font-size: 1rem;
+  border-radius: 8px;
+  border-style: none;
+  cursor: pointer;
 }

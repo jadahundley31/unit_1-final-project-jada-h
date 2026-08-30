@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "../pages/personality-quiz/quiz.css";
+import "../pages/personality-quiz/personality-quiz.css";
 
 const UserPersonal = () => {
     const [savedBooks, setSavedBooks] = useState([]);

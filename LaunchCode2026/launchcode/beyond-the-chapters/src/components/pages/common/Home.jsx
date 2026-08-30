@@ -48,12 +48,13 @@ const Home = () => {
               <td>Answer 15 thoughtful questions about your personality.</td>
               <td>Our algorithm finds books that resonate with who you are.</td>
               <td>
-                Discover your curated list, save favorite, or retake the quiz
+                Discover your curated list, save favorites, or retake the quiz
                 for fresh picks.
               </td>
             </tr>
           </tbody>
         </table>
+        <button onClick={handleFindRead}>Take Test</button>
       </section>
     </main>
   );
