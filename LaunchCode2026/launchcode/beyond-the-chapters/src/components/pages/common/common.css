@@ -1,0 +1,25 @@
+.home-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%
+}
+
+.home-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.home-content {
+  width: 50%;
+}
+
+.home-image {
+  width: 50%;
+}
+
+.home-image img {
+  width: 100%;
+  height: auto;
+}

@@ -10,7 +10,6 @@ import Home from "./components/pages/common/Home";
 
 
 function App() {
-  //TODO: Add a Homepage to Route. <Route path='*' element={<Navigate to="/"/>} />
   return (
     <div>
       <Header/>
