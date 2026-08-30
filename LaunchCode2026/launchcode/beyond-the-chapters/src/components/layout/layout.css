@@ -12,6 +12,7 @@
 }
 
 header {
+  font-family: 'Average Sans', 'serif';
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,5 +33,31 @@ nav a {
 }
 
 nav a:hover {
+  opacity: 0.6;
+}
+
+footer {
+  font-family: 'Average Sans', 'serif';
+  margin-top: 60px;
+  padding: 30px 40px;
+  border-top: 1px groove;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-text p {
+  margin: 5px 0;
+}
+
+.footer-content a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-content a:hover {
   opacity: 0.6;
 }
