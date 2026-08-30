@@ -13,8 +13,8 @@ const Home = () => {
       <section className="home-text">
         <div className="home-content">
           <h1>
-            Find the book that
-            you were meant to <br/>read next.
+            Find the book <br/>that
+            you were <br/>meant to read next.
           </h1>
           <p>
             15 questions. 5 matches. <br />

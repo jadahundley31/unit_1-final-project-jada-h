@@ -1,20 +1,18 @@
 .home-section {
   display: flex;
   flex-direction: column;
-  width: 50rem;
-  padding-left: 20rem;
+  width: 100%;
+  padding: 0 40px;
+  box-sizing: border-box;
   font-size: larger;
 }
 
 .home-text {
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: center;
+  gap: 40px;
   width: 100%;
-}
-
-.home-content {
-  width: 50%;
 }
 
 .home-content h1 {
@@ -34,7 +32,6 @@
 .home-image {
   width: 25rem;
   height: auto;
-  margin-right: 10rem;
 }
 
 .home-image img {
