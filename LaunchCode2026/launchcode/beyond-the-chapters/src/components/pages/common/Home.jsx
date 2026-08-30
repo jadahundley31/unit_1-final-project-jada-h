@@ -13,14 +13,14 @@ const Home = () => {
       <section className="home-text">
         <div className="home-content">
           <h1>
-            Find the book that <br />
+            Find the book that
             you were meant to <br/>read next.
           </h1>
           <p>
             15 questions. 5 matches. <br />
             Just a quiz that took its time to uderstand you
           </p>
-          <button className="start-quiz" onClick={handleFindRead}>Find your next read</button>
+          <button onClick={handleFindRead}>Find your next read</button>
         </div>
         <div className="home-image">
           <img src="../images/clipart-books.png" alt="stack of books" />

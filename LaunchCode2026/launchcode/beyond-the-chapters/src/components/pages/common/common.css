@@ -12,16 +12,23 @@
   justify-content: right;
   width: 100%;
 }
-.home-text h1 {
-  font-family: 'Chewy', 'serif';
-}
-
-.home-text p {
-  font-family: 'Henny Penny', 'serif';
-}
 
 .home-content {
   width: 50%;
+}
+
+.home-content h1 {
+  font-family: 'Chewy', 'serif';
+  font-size: 3rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.home-content p {
+  font-family: 'Henny Penny', 'serif';
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 25px;
 }
 
 .home-image {
@@ -35,14 +42,15 @@
   height: auto;
 }
 
-.start-quiz {
-  border-radius: 5px;
-  border-style: none;
+.home-content button {
   background-color: #b95c38;
   color: #f2ebe1;
-  padding: 15px, 30px;
-  font-size: 16px;
-}
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border-style: none;
+  cursor: pointer;
+} 
 
 /*second half of home page*/
 
@@ -58,6 +66,6 @@ h2 {
   font-family: 'Chewy', 'serif';
 }
 
-td {
+p, td {
   font-family: 'Average Sans', 'serif';
 }
