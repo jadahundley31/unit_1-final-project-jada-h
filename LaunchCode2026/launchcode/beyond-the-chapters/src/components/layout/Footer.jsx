@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router";
+import "./layout.css";
 
 const Footer = () => {
   const location = useLocation();
