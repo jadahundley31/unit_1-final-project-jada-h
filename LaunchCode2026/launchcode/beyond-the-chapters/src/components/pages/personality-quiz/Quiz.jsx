@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { prerenderToNodeStream } from "react-dom/static";
 import { useNavigate } from "react-router";
+import './personality-quiz.css';
 
 const Quiz = () => {
   const [questions, setQuestions] = useState([]);
@@ -96,13 +96,13 @@ const Quiz = () => {
 
     const handleGetResults = () => {
       const result = calculateResults(scores);
-      navigate("/results", { state: {result} });
+      navigate("/results", { state: { result } });
     };
 
     const calculateResults = (scores) => {
       let highestScore = 0;
       let winningCategory = "";
-      
+
       for (let key in scores) {
         if (scores[key] > highestScore) {
           highestScore = scores[key];
@@ -113,29 +113,46 @@ const Quiz = () => {
     };
 
     return (
-      <div>
-        <p>
-          Question {currentQuestion + 1} of {questions.length}
-        </p>
-        {questions[currentQuestion].question}
-        {questions[currentQuestion].choices.map((choice) => {
-          return (
-            <button
-              key={choice.id}
-              onClick={() => handleUserChoice(choice)}
-              disabled={selectedCategory !== ""}
-            >
-              {choice.text}
-            </button>
-          );
-        })}
+      <main className="quiz-page">
+        <div className="quiz-container">
+          <p className="quiz-progress">
+            Question {currentQuestion + 1} of {questions.length}
+          </p>
 
-        {currentQuestion < questions.length - 1 && (
-          <button onClick={handleNextQuestion}>Next Question</button>
-        )}
+          <h2 className="quiz-question">
+            {questions[currentQuestion].question}
+          </h2>
 
-        {isComplete && (<button onClick={handleGetResults}>Get Results</button>)}
-      </div>
+          <div className="quiz-choices">
+            {questions[currentQuestion].choices.map((choice) => {
+              return (
+                <button
+                  key={choice.id}
+                  onClick={() => handleUserChoice(choice)}
+                  disabled={selectedCategory !== ""}
+                >
+                  {choice.text}
+                </button>
+              );
+            })}
+          </div>
+
+          <div className="quiz-navigation">
+            {currentQuestion < questions.length - 1 && (
+              <button 
+                onClick={handleNextQuestion} 
+                disabled={selectedCategory === ""}
+              >
+                Next Question
+              </button>
+            )}
+
+            {isComplete && (
+              <button onClick={handleGetResults}>Get Results</button>
+            )}
+          </div>
+        </div>
+      </main>
     );
   }
 };

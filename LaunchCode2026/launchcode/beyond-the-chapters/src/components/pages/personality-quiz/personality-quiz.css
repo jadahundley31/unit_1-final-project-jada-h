@@ -1,3 +1,69 @@
+.quiz-page {
+  width: 100%;
+  padding: 60px 40px;
+  box-sizing: border-box;
+}
+
+.quiz-container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.quiz-progress {
+  font-family: 'Average Sans', 'serif';
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.quiz-question {
+  font-family: 'Average Sans', 'serif';
+  font-size: 2rem;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
+
+.quiz-choices {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.quiz-choices button {
+  width: 100%;
+  padding: 15px 20px;
+  font-family: 'Average Sans', 'serif';
+  font-size: 1rem;
+  text-align: left;
+  border: 1px solid;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.quiz-choices button:hover:not(:disabled) {
+  transform: scale(1.02);
+}
+
+.quiz-navigation {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.quiz-navigation button {
+  background-color: #b95c38;
+  color: #f2ebe1;
+  padding: 12px 24px;
+  font-family: 'Average Sans', 'serif';
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+}
+
+.quiz-navigation button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .book-cover {
     width: 200px;
     height: 300px;

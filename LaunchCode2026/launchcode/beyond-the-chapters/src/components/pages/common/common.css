@@ -47,7 +47,6 @@
   font-size: 1rem;
   border-radius: 8px;
   border-style: none;
-  cursor: pointer;
 } 
 
 .home-content button:hover {
@@ -107,5 +106,8 @@ p, td {
   font-size: 1rem;
   border-radius: 8px;
   border-style: none;
-  cursor: pointer;
+}
+
+.table-section button:hover {
+  transform: scale(1.05);
 }
