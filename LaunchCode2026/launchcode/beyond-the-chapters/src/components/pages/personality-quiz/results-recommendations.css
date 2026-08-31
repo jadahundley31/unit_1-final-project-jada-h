@@ -101,3 +101,30 @@
 .book-card button:hover {
     transform: scale(1.05);
 }
+
+.recommendations-section h2 {
+  font-family: 'Average Sans', 'serif';
+  font-size: 2rem;
+  text-align: left;
+  margin-bottom: 30px;
+  border-top: 1px groove;
+}
+
+.results-navigation {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.results-navigation button {
+  background-color: #b95c38;
+  color: #f2ebe1;
+  padding: 12px 24px;
+  font-family: 'Average Sans', 'serif';
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+}
+
+.results-navigation button:hover {
+  transform: scale(1.05);
+}
