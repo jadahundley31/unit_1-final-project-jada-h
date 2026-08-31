@@ -63,9 +63,3 @@
   opacity: 0.5;
   cursor: not-allowed;
 }
-
-.book-cover {
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-}
