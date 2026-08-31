@@ -1,3 +1,25 @@
+.results-page {
+  width: 100%;
+  padding: 50px 40px;
+  box-sizing: border-box;
+}
+
+.results-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.results-header h2 {
+  font-family: 'Chewy', 'serif';
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.results-header p {
+  font-family: 'Henny Penny', 'serif';
+  font-size: 1.5rem;
+}
+
 .book-cover {
     width: 200px;
     height: 300px;
