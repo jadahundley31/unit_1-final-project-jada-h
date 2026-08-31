@@ -40,7 +40,7 @@ const About = () => {
       </section>
 
       <section>
-        <h2>Contact Us</h2>
+        <h2>Let's Chat</h2>
 
         <form id="feedback-form" onSubmit={handleSubmit}>
           <label>

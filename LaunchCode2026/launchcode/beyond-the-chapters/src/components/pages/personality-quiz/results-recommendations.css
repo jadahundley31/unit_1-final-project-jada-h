@@ -1,6 +1,6 @@
 .results-page {
   width: 100%;
-  padding: 50px 40px;
+  padding: 50px 40px 60px;
   box-sizing: border-box;
 }
 
@@ -18,6 +18,8 @@
 .results-header p {
   font-family: 'Henny Penny', 'serif';
   font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .results-guard {
@@ -100,6 +102,10 @@
 
 .book-card button:hover {
     transform: scale(1.05);
+}
+
+.recommendations-section {
+  margin-top: 30px;
 }
 
 .recommendations-section h2 {

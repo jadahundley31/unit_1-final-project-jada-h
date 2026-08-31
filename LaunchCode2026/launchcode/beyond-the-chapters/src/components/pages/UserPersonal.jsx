@@ -14,8 +14,8 @@ const UserPersonal = () => {
     }, []);
     console.log(savedBooks);
     return (
-        <div>
-            <h2>My Saved Books</h2>
+        <div className="user-personal-container">
+            <h2 style={{fontFamily:'Average Sans'}}>My Saved Books</h2>
             <div className="book-container">
                 {savedBooks.map((book) => {
                 return (
