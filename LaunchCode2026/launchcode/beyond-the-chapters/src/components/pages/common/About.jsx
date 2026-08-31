@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./about.css";
 
 const About = () => {
   const [formData, setFormData] = useState({
@@ -28,8 +29,8 @@ const About = () => {
   };
 
   return (
-    <main>
-      <section>
+    <main className="about-page">
+      <section className="about-section">
         <h2>About Us</h2>
         <p>
           Beyond the Chapters is a book discovery app designed to help readers
@@ -39,7 +40,7 @@ const About = () => {
         </p>
       </section>
 
-      <section>
+      <section className="contact-section"> 
         <h2>Let's Chat</h2>
 
         <form id="feedback-form" onSubmit={handleSubmit}>
@@ -51,9 +52,8 @@ const About = () => {
               value={formData.name}
               onChange={handleChange}
             />
-          </label>{" "}
-          <br />
-          <br />
+          </label>
+
           <label>
             Email:
             <input
@@ -62,9 +62,8 @@ const About = () => {
               value={formData.email}
               onChange={handleChange}
             />
-          </label>{" "}
-          <br />
-          <br />
+          </label>
+
           <label>
             Feedback:
             <textarea
@@ -73,9 +72,8 @@ const About = () => {
               value={formData.feedback}
               onChange={handleChange}
             />
-          </label>{" "}
-          <br />
-          <br />
+          </label>
+
           <button
             type="submit"
             disabled={!formData.name || !formData.email || !formData.feedback}
@@ -83,6 +81,7 @@ const About = () => {
             Submit
           </button>
         </form>
+
         {submitted && (<p>Thank you! Your feedback has been submitted.</p>)}
       </section>
     </main>
