@@ -47,10 +47,10 @@
   font-size: 1rem;
   border-radius: 8px;
   border-style: none;
-} 
+}
 
 .home-content button:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 /*second half of home page*/
@@ -109,5 +109,5 @@ p, td {
 }
 
 .table-section button:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }

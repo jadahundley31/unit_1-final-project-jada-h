@@ -45,8 +45,9 @@ const Recommendations = ({ personality }) => {
   };
 
   return (
-    <div>
+    <div className="recommendations-section">
       <h2>Recommended Books</h2>
+      
       <div className="book-container">
         {matchingBooks.map((book) => {
           return (

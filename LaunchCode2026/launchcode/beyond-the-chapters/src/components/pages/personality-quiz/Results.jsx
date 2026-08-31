@@ -8,7 +8,7 @@ const Results = () => {
 
     if(!location.state) {
         return (
-            <div>
+            <div className="results-guard">
                 <p>No results found. Please take the quiz first.</p>
                 <button onClick={() => navigate("/quiz")}>
                     Take Quiz

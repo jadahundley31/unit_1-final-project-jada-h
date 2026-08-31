@@ -36,7 +36,6 @@
   text-align: left;
   border: 1px solid;
   border-radius: 8px;
-  cursor: pointer;
 }
 
 .quiz-choices button:hover:not(:disabled) {
