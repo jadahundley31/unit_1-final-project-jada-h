@@ -1,8 +1,11 @@
 import { Link, useLocation } from "react-router";
 import "./layout.css";
+import { useState } from "react";
 
 const Header = () => {
   const location = useLocation();
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header>
       <div className="logo-container">
@@ -15,7 +18,13 @@ const Header = () => {
         }
         <strong>Beyond the Chapters</strong>
       </div>
-      <nav>
+
+      <button className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        ☰ 
+      </button> {/* If menuOpen is false, clicking changes it to true, and again back to false */}
+      
+      {/* if menuOpen is true, give nav the class "nav-open", otherwise don't add a class */}  
+      <nav className={menuOpen ? "nav-open" : ""}>
         <ul>
           <li>
             {location.pathname !== "/home" && <Link to="/home">Home</Link>}

@@ -36,6 +36,10 @@ nav a:hover {
   opacity: 0.6;
 }
 
+.hamburger {
+  display: none;
+}
+
 footer {
   font-family: 'Average Sans', 'serif';
   margin-top: 60px;
@@ -60,4 +64,52 @@ footer {
 
 .footer-content a:hover {
   opacity: 0.6;
+}
+
+/* media queries */
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  header {
+    position: relative;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.nav-open {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    padding: 20px;
+    min-width: 140px;
+    background-color: #f2ebe1;
+    border-radius: 8px;
+    z-index: 10;
+  }
+
+  nav.nav-open ul {
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+nav.nav-open li {
+  width: 100%;
+  text-align: center;
+}
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
