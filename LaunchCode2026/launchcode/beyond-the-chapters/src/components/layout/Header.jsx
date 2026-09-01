@@ -21,7 +21,7 @@ const Header = () => {
             {location.pathname !== "/home" && <Link to="/home">Home</Link>}
           </li>
           <li>{location.pathname !== "/quiz" && <Link to="/quiz">Start Quiz</Link>}</li>
-          <li><Link to="/user">My Books</Link></li>
+          <li>{location.pathname !== "/user" && <Link to="/quiz">My Books</Link>}</li>
           <li>{location.pathname !== "/about" && <Link to="/about">About Us</Link>}</li>
         </ul>
       </nav>
