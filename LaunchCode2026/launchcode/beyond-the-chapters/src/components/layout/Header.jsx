@@ -22,7 +22,7 @@ const Header = () => {
           </li>
           <li>{location.pathname !== "/quiz" && <Link to="/quiz">Start Quiz</Link>}</li>
           <li><Link to="/user">My Books</Link></li>
-          <li><Link to="/about">About Us</Link></li>
+          <li>{location.pathname !== "/about" && <Link to="/about">About Us</Link>}</li>
         </ul>
       </nav>
     </header>
