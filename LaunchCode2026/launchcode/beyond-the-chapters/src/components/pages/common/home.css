@@ -37,6 +37,7 @@
 .home-image img {
   width: 100%;
   height: auto;
+  animation: floatBooks 3s ease-in-out infinite;
 }
 
 .home-content button {
@@ -53,7 +54,7 @@
     transform: scale(1.05);
 }
 
-/*second half of home page*/
+/* second half of home page */
 
 h2, .first-table-header, .second-table-header {
   font-family: 'Chewy', 'serif';
@@ -110,4 +111,20 @@ p, td {
 
 .table-section button:hover {
     transform: scale(1.05);
+}
+
+/* A simple floating animation towards my homepage book image */
+
+@keyframes floatBooks {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
