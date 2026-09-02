@@ -23,7 +23,7 @@ const Home = () => {
           <button onClick={handleFindRead}>Find your next read</button>
         </div>
         <div className="home-image">
-          <img src="../images/clipart-books.png" alt="stack of books" />
+          <img src={`${import.meta.env.BASE_URL}images/clipart-books.png`} alt="stack of books" />
         </div>
       </section>
       <section className="table-section">

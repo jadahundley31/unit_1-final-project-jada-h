@@ -12,7 +12,7 @@ const Header = () => {
         {
           <img
             id="logo"
-            src="../images/logo.png"
+            src={`${import.meta.env.BASE_URL}images/logo.png`}//helps send data to /unit_1-final-project-jada-h/ for deployed app
             alt="beyond-the-chapters-logo"
           />
         }
