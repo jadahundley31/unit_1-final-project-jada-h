@@ -1,0 +1,94 @@
+.about-page {
+  width: 100%;
+  padding: 50px 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-section {
+  width: 600px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-section h2 {
+  font-family: 'Chewy', 'serif';
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.about-section p {
+  font-family: 'Average Sans', 'serif';
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.contact-section {
+  width: 500px;
+}
+
+.contact-section h2 {
+  font-family: 'Chewy', 'serif';
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#feedback-form label {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Average Sans', 'serif';
+  font-size: 1rem;
+  gap: 8px;
+}
+
+#feedback-form input,
+#feedback-form textarea {
+  width: 100%;
+  padding: 12px;
+  font-family: 'Average Sans', 'serif';
+  font-size: 1rem;
+  border: 1px solid;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+#feedback-form textarea {
+  height: 140px;
+  resize: none;
+}
+
+#feedback-form button {
+  background-color: #b95c38;
+  color: #f2ebe1;
+  padding: 12px 24px;
+  font-family: 'Average Sans', 'serif';
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  align-self: center;
+}
+
+#feedback-form button:hover:not(:disabled) {
+  transform: scale(1.05);
+}
+
+#feedback-form button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.submit-message {
+  font-family: 'Average Sans', 'serif';
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 20px;
+}
