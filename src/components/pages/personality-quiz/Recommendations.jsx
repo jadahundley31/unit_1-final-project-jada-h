@@ -5,7 +5,7 @@ const Recommendations = ({ personality }) => {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
-    fetch("/mock-data/recommendedBooks.json")
+    fetch(`${import.meta.env.BASE_URL}/mock-data/recommendedBooks.json`)//helps send data to /unit_1-final-project-jada-h/ for deployed app
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to load file");

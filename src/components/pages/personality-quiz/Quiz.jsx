@@ -17,7 +17,7 @@ const Quiz = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("/mock-data/personalityQuestions.json")
+    fetch(`${import.meta.env.BASE_URL}/mock-data/personalityQuestions.json`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to load file");
